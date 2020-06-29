@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
@@ -14,22 +13,25 @@
 
 <body>
 
-    <div class="container-fluid mt-5">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row" id="formRow">
             <div class="col d-flex justify-content-center">
-                <form>
+                <form id="newTaskForm">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Agregar una nueva tarea</label>
-                        <input type="text" class="form-control" id="inputToDo" placeholder="Nueva tarea">
+                        <label class="d-flex justify-content-center">Agregar una nueva tarea</label>
+                        <input type="text" class="form-control" id="newTaskInput" placeholder="Nueva tarea"
+                            required="true">
                     </div>
-                    <button type="submit" class="btn btn-dark">Añadir</button>
-                    <div class="newTaskInput"></div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Añadir</button>
+                    </div>
+                    <div id="newTaskResult"></div>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="script.js" type="module"></script>
+    <script src="./script.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>

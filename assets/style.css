@@ -1,0 +1,26 @@
+
+body {
+    background-color: #efefef;
+}
+
+#formRow {
+    margin-top: 15rem;
+}
+
+#newTaskInput {
+    width: 30rem;
+}
+
+.checkGreen {
+    color: green;
+}
+
+.timesRed {
+    color: red;
+}
+
+.checkGreen,
+.timesRed {
+    border-radius: 25px;
+    border: none;
+}
